@@ -6,6 +6,10 @@ This project adheres to [Semantic Versioning](http://semver.org/) and is followi
 
 ## Unreleased
 
+### :zap: Added
+
+- [#55](https://github.com/FantasticFiasco/mvvm-dialogs/issues/55) Support for .NET Core 3 (contribution by [virzak](https://github.com/virzak))
+
 ## 5.2.1 - 2018-10-30
 
 ### :syringe: Fixed
@@ -28,7 +32,7 @@ This project adheres to [Semantic Versioning](http://semver.org/) and is followi
 
 ### :zap: Added
 
-- [#30](https://github.com/FantasticFiasco/mvvm-dialogs/issues/30) Support for customizing the following Windows dialogs (contribution by [@pdinnissen](https://github.com/pdinnissen)):
+- [#30](https://github.com/FantasticFiasco/mvvm-dialogs/issues/30) Support for customizing the following Windows dialogs (contribution by [pdinnissen](https://github.com/pdinnissen)):
     - Message box
     - Open file dialog
     - Save file dialog
@@ -44,7 +48,7 @@ This project adheres to [Semantic Versioning](http://semver.org/) and is followi
 
 ### :zap: Added
 
-- Option to set filter index when opening or saving a file (contribution by [@gigios](https://github.com/gigios))
+- Option to set filter index when opening or saving a file (contribution by [gigios](https://github.com/gigios))
 
 ## 4.0.10 - 2017-04-20
 
