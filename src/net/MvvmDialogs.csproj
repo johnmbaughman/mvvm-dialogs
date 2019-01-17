@@ -1,16 +1,20 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFrameworks>net35;net40;net45;netcoreapp3.0</TargetFrameworks>
     <AssemblyTitle>MVVM Dialogs</AssemblyTitle>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
-    <RunCodeAnalysis>true</RunCodeAnalysis>
     <CodeAnalysisRuleSet>..\..\MvvmDialogs.ruleset</CodeAnalysisRuleSet>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\StrongName.snk</AssemblyOriginatorKeyFile>
     <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <!-- The following section can be removed penging the bug: https://github.com/dotnet/wpf/issues/255 -->
+  <PropertyGroup>
+    <DisableImplicitFrameworkReferences Condition="'$(TargetFramework)' == 'net40' or '$(TargetFramework)' == 'net35'">true</DisableImplicitFrameworkReferences>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
@@ -25,17 +29,12 @@
     <DefineConstants Condition="'$(TargetFramework)' == 'net35'">TRACE;PRE_NET40;PRE_NET45</DefineConstants>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <FrameworkPathOverride Condition="'$(TargetFramework)' == 'net35'">$(MSBuildProgramFiles32)\Reference Assemblies\Microsoft\Framework\.NETFramework\v3.5\Profile\Client</FrameworkPathOverride>
+  </PropertyGroup>
+
   <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="WindowsBase" />
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Xaml">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
-    </Reference>
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net40'">
