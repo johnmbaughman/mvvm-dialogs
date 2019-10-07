@@ -1,6 +1,19 @@
-![MVVM Dialogs logo](doc/resources/Icon_128x128.png)
+<h1 align="center">
+    <br>
+    <img src="https://raw.githubusercontent.com/FantasticFiasco/mvvm-dialogs/master/doc/resources/Icon_200x200.png" alt="MVVM Dialogs" width="200">
+    <br>
+    MVVM Dialogs
+    <br>
+</h1>
 
-# MVVM Dialogs [![Build status](https://ci.appveyor.com/api/projects/status/9eyvxv5jr9bybant/branch/master?svg=true)](https://ci.appveyor.com/project/FantasticFiasco/mvvm-dialogs/branch/master) [![NuGet](https://img.shields.io/nuget/v/MvvmDialogs.svg)](https://www.nuget.org/packages/MvvmDialogs/) [![NuGet](https://img.shields.io/nuget/dt/MvvmDialogs.svg)](https://www.nuget.org/packages/MvvmDialogs/)
+<h4 align="center">Framework simplifying the concept of opening dialogs from a view model when using MVVM in WPF or UWP.</h4>
+
+<p align="center">
+    <a href="https://ci.appveyor.com/project/FantasticFiasco/mvvm-dialogs/branch/master"><img src="https://ci.appveyor.com/api/projects/status/9eyvxv5jr9bybant/branch/master?svg=true"></a>
+    <a href="https://www.nuget.org/packages/MvvmDialogs/"><img src="https://img.shields.io/nuget/v/MvvmDialogs.svg"></a>
+    <a href="https://semver.org/"><img src="https://img.shields.io/badge/%E2%9C%85-SemVer%20compatible-blue"></a>
+    <a href="https://www.nuget.org/packages/MvvmDialogs/"><img src="https://img.shields.io/nuget/dt/MvvmDialogs.svg"></a>
+</p>
 
 ## Table of contents
 
@@ -146,7 +159,11 @@ PM> Install-Package MvvmDialogs
 
 MVVM Dialogs started out as an [article on CodeProject](https://www.codeproject.com/Articles/36745/Showing-Dialogs-When-Using-the-MVVM-Pattern-in-WPF) with its first revision published in May 2009. At that time MVVM was still new and fresh, and the now hugely popular [MVVM Light](http://www.mvvmlight.net/) had yet not been published. In fact, none of the MVVM libraries commonly used today existed back then. MVVM Dialogs came about out of necessity to work with dialogs from the view model, a reaction to the fact that although MVVM was a popular pattern, the support to implement it was rather limited.
 
-Now many years later, MVVM Dialogs is still maintained and new features are implemented on demand. The framework has grown up, and found its place in the world...
+So, the initial publication was over 10 years ago. Give that a thought. An open source project that after 10 years still is maintained and extremely relevant with the upcoming .NET Core 3. Take that all you out there claiming open source code is volatile!
+
+![MVVM Dialogs anniversary](doc/resources/cake.png)
+
+Hip hip hooray!
 
 ## Reputation
 
