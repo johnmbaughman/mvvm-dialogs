@@ -13,10 +13,7 @@ namespace MvvmDialogs.DialogTypeLocators
         /// <summary>
         /// Initializes a new instance of the <see cref="DialogTypeLocatorCache"/> class.
         /// </summary>
-        internal DialogTypeLocatorCache()
-        {
-            cache = new Dictionary<Type, Type>();
-        }
+        internal DialogTypeLocatorCache() => cache = new Dictionary<Type, Type>();
 
         /// <summary>
         /// Adds the specified view model type with its corresponding dialog type.
@@ -37,7 +34,11 @@ namespace MvvmDialogs.DialogTypeLocators
         /// </summary>
         /// <param name="viewModelType">Type of the view model.</param>
         /// <returns>The dialog type if found; otherwise null.</returns>
+#if NETFX_CORE
         internal Type Get(Type viewModelType)
+#else
+        internal Type? Get(Type viewModelType)
+#endif
         {
             if (viewModelType == null)
                 throw new ArgumentNullException(nameof(viewModelType));

@@ -17,6 +17,7 @@ x86/
 bld/
 [Bb]in/
 [Oo]bj/
+AppPackages/
 
 # Visual Studo 2015 cache/options directory
 .vs/
@@ -31,13 +32,17 @@ artifacts/
 
 # NuGet Packages
 *.nupkg
+*.snupkg
 **/packages/*
+
+# Rider IDE
+.idea
 
 # ReSharper
 src/_ReSharper.Caches/
 
 # Cake
-tools/
+build/tools/*
 
 # GhostDoc
 *.GhostDoc.xml

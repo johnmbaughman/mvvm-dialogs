@@ -2,9 +2,10 @@
   "extends": [
     "github>FantasticFiasco/renovate-config"
   ],
+  "ignoreDeps": ["Moq"],
   "packageRules": [
     {
-      "packagePatterns": ["^SpecFlow."],
+      "packagePatterns": ["^SpecFlow"],
       "groupName": "SpecFlow packages"
     }
   ]
